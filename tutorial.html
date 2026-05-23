@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Hosting Practical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="t-style.css"/>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header-label">Web Design Lab &mdash; Practical Report</div>
+  <h1>Hosting a Webpage using<br><em>GitHub Pages</em></h1>
+  <p class="intro">
+    This practical demonstrates how to take a website built with HTML and CSS and make it
+    publicly available on the internet for free using GitHub Pages.
+  </p>
+
+  <hr class="divider"/>
+
+  <div class="browser">
+    <div class="browser-top">
+      <div class="bdots">
+        <div class="bdot r"></div>
+        <div class="bdot y"></div>
+        <div class="bdot g"></div>
+      </div>
+      <div class="burl">&#128275; https://strxze.github.io/web/</div>
+    </div>
+    <div class="browser-body">
+      ✓ &nbsp;Website is live and publicly accessible to anyone with the link.
+    </div>
+  </div>
+
+  <div class="section-title">&#9997;&#65039; How it works</div>
+
+  <div class="flow">
+    <div class="flow-node">
+      <span class="fn-icon">&#128193;</span>
+      <div class="fn-label">Local Folder</div>
+      <div class="fn-sub">HTML / CSS</div>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-node">
+      <span class="fn-icon">&#9881;&#65039;</span>
+      <div class="fn-label">Git</div>
+      <div class="fn-sub">git push</div>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-node hl">
+      <span class="fn-icon">&#9729;&#65039;</span>
+      <div class="fn-label">GitHub Repo</div>
+      <div class="fn-sub">online storage</div>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-node">
+      <span class="fn-icon">&#127760;</span>
+      <div class="fn-label">GitHub Pages</div>
+      <div class="fn-sub">web server</div>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-node">
+      <span class="fn-icon">&#128065;&#65039;</span>
+      <div class="fn-label">Anyone</div>
+      <div class="fn-sub">views site</div>
+    </div>
+  </div>
+
+  <div class="section-title">&#128203; Steps followed</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1.</div>
+      <div>
+        <h3>Prepared the project folder</h3>
+        <p>Created a folder containing index.html, style.css, and an img/ folder with images.</p>
+        <code>E:\For-Webdesigning\</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2.</div>
+      <div>
+        <h3>Initialized Git</h3>
+        <p>Opened VS Code terminal and ran git init to start tracking the folder.</p>
+        <code>git init &nbsp;&rarr;&nbsp; git add . &nbsp;&rarr;&nbsp; git commit -m "initial commit"</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3.</div>
+      <div>
+        <h3>Created GitHub repository</h3>
+        <p>Made a new public repository named "web" on GitHub with no README file.</p>
+        <code>github.com &rarr; New &rarr; Public &rarr; Create repository</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4.</div>
+      <div>
+        <h3>Generated a Personal Access Token</h3>
+        <p>Created a token from GitHub Settings for authentication during push.</p>
+        <code>Settings &rarr; Developer Settings &rarr; Tokens (classic)</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5.</div>
+      <div>
+        <h3>Pushed files to GitHub</h3>
+        <p>Connected the local folder to GitHub and uploaded all files.</p>
+        <code>git remote add origin https://TOKEN@github.com/Strxze/web.git</code>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6.</div>
+      <div>
+        <h3>Enabled GitHub Pages</h3>
+        <p>Went to repository Settings &rarr; Pages &rarr; selected branch: main &rarr; saved.</p>
+        <code>Waited ~5 minutes &rarr; site went live</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">&#128204; Important notes</div>
+  <div class="notes">
+    <div class="note">
+      <h4>&#128196; index.html is must</h4>
+      <p>GitHub Pages only serves the homepage if a file named exactly index.html exists in the root folder.</p>
+    </div>
+    <div class="note">
+      <h4>&#128279; URL is case-sensitive</h4>
+      <p>Repository name must match the URL exactly. Using lowercase avoids 404 errors.</p>
+    </div>
+    <div class="note">
+      <h4>&#128274; Token expires</h4>
+      <p>Personal access tokens expire. Generate a new one if you get authentication errors on push.</p>
+    </div>
+  </div>
+
+  <div class="section-title">&#127760; Live website</div>
+
+  <div class="live-box">
+    <div class="live-indicator">
+      <div class="live-dot"></div>
+      LIVE
+    </div>
+    <div class="live-content">
+      <div class="live-label">Hosted on GitHub Pages &mdash; accessible to anyone</div>
+      <a href="https://strxze.github.io/web/" target="_blank">https://strxze.github.io/web/</a>
+      <div class="live-note">Free hosting &bull; No login required to view &bull; Deployed from main branch</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Web Design Lab &mdash; GitHub Pages Practical</p>
+    <span class="handnote">Hosted for free &#10003;</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
